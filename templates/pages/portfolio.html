@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Portfolio</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+        <style>
+            body {
+                font-family: 'Poppins', sans-serif;
+                background-color: #f4f4f4;
+                color: #333;
+            }
+            .navbar {
+                background-color: #007bff;
+            }
+            .navbar-brand, .nav-link {
+                color: white !important;
+                font-weight: 600;
+            }
+            .hero {
+                text-align: center;
+                padding: 80px 20px;
+                background: linear-gradient(to right, #007bff, #00c6ff);
+                color: white;
+            }
+            .hero h1 {
+                font-weight: 700;
+            }
+            .btn-primary {
+                background-color: #ff6f61;
+                border: none;
+                padding: 10px 20px;
+                font-size: 1.2rem;
+            }
+            .section-title {
+                text-align: center;
+                margin-bottom: 40px;
+                font-weight: 700;
+                color: #007bff;
+            }
+            .card {
+                border-radius: 10px;
+                box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+                transition: 0.3s;
+            }
+            .card:hover {
+                transform: scale(1.05);
+            }
+            .footer {
+                background-color: #007bff;
+                color: white;
+                text-align: center;
+                padding: 20px;
+            }
+            .profile-img {
+                width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid white;
+            margin-bottom: 15px;
+        }
+
+        </style>
+    </head>    
+    <body>
+        <!-- Navigation Bar -->
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="#">My Portfolio</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="hero">
+            <img src="https://i.imgur.com/dHbqIAv.png" alt="Joemarc Pagdilao" class="profile-img">
+            <h1>Welcome to My Portfolio Page</h1>
+            <p>This is a simple portfolio page created using Django..</p>
+            <a href="#projects" class="btn btn-primary">My Projects</a>
+        </div>
+        
+        <div id="about" class="container mt-5 text-center">
+            <h2 class="section-title">About Me</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <p>Hello! My name is Joemarc Pagdilao, a BS in Information Technology student of Gordon College aspiring to be a UI/UX Designer.</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="projects" class="container mt-5">
+            <h2 class="section-title">Projects</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card p-3">
+                        <img src="" class="card-img-top" alt="Project 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Project 1</h5>
+                            <p class="card-text">.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card p-3">
+                        <img src="" class="card-img-top" alt="Project 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Project 2</h5>
+                            <p class="card-text"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card p-3">
+                        <img src="" class="card-img-top" alt="Project 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Project 3</h5>
+                            <p class="card-text"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div id="contact" class="container mt-5 text-center">
+            <h2 class="section-title">Contact</h2>
+            <p>Email: <a href="mailto:joemarcpagdilao@gmail.com">joemarcpagdilao@gmail.com</a></p>
+            <p>Follow me on social media:</p>
+            <a href="https://www.facebook.com/joemarc.pagdilao" class="btn btn-outline-primary"><i class="fab fa-linkedin"></i> Facebook</a>
+            <a href="https://github.com/pankek1" class="btn btn-outline-dark"><i class="fab fa-github"></i> GitHub</a>
+            <a href="https://www.instagram.com/_joemarcc/" class="btn" style="background: linear-gradient(45deg, #f58529, #dd2a7b, #8134af, #515bd4); color: white; border: none;"><i class="fab fa-instagram"></i> Instagram</a>
+        </div>
+    
+        <div class="footer">
+            <p>© 2025 Joemarc Pagdilao | Designed with Django</p>
+        </div>
+    
+    </body>
+    
+</html>

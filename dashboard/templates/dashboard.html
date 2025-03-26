@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h2 style="margin-top: 20px;">🏠Home</h2>
+    <div class="card-container">
+        {% for item in data %}
+            {% include 'components/card.html' %}
+        {% endfor %}
+    </div>
+{% endblock %}

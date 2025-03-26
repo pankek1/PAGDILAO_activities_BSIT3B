@@ -1,0 +1,32 @@
+<div class="card">
+    <h3>{{ item.title }}</h3>
+    <p>{{ item.count }}</p>
+</div>
+
+<style>
+    /* Card Styles */
+    .card {
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        width: 180px;
+        transition: transform 0.3s;
+    }
+
+    .card:hover {
+        transform: scale(1.05);
+    }
+
+    .card h3 {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    .card p {
+        font-size: 24px;
+        font-weight: bold;
+        color: #27ae60;
+    }
+</style>
